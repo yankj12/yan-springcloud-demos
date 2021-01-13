@@ -12,9 +12,9 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @EnableDiscoveryClient
 @EnableHystrixDashboard    // 启用Hystrix Dashboard和熔断器
 @EnableCircuitBreaker      // 启用Hystrix Dashboard和熔断器
-public class HelloApplication {
+public class HystrixDashboardApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloApplication.class, args);
+		SpringApplication.run(HystrixDashboardApplication.class, args);
 	}
 }
