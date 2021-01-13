@@ -9,3 +9,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/    # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔
+  server:
+    evictionIntervalTimerInMs: 5000        #驱逐下线的服务，间隔,5秒，默认是60。此配置建议只试用开发和测试环境
+  instance:
+    leaseRenewalIntervalInSeconds: 2       #心跳间隔时间,默认是30秒。此配置建议只试用开发和测试环境
+    leaseExpirationDurationInSeconds: 6    # 最后一次心跳时间后leaseExpirationDurationInSeconds秒就认为是下线了，默认是90秒。此配置建议只试用开发和测试环境
+
+feign:
+  hystrix:
+    enabled: true
