@@ -7,8 +7,10 @@ SpringCloud的demo
 |---|---|---|
 |yan-springcloud-eurekaserver|8000|服务注册发现，eureka服务端|
 |yan-springcloud-echo|9000|服务提供方|
+|yan-springcloud-echo2|9003|yan-springcloud-echo的拷贝，验证网关的负载均衡|
 |yan-springcloud-hello|9001|服务调用方，集成了断路器|
-|yan-springcloud-hystrix-dashboard|9092|hystrix的dashboard|
+|yan-springcloud-hystrix-dashboard|9002|hystrix的dashboard|
+|yan-springcloud-zuul|8888|微服务网关|
 
 hystrix-dashboard并不需要集成到某个服务客户端之中， hystrix-dashboard 只是提供了一个监控页面
 

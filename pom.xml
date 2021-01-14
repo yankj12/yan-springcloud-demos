@@ -19,7 +19,10 @@
   <modules>
 	<module>yan-springcloud-eurekaserver</module>
 	<module>yan-springcloud-echo</module>
+	<module>yan-springcloud-echo2</module>
 	<module>yan-springcloud-hello</module>
 	<module>yan-springcloud-hystrix-dashboard</module>
+	<module>yan-springcloud-zuul</module>
   </modules>
+
 </project>

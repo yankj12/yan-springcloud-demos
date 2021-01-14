@@ -19,8 +19,8 @@ public class HelloApi {
 	
     @RequestMapping("/helloworld")
     public String helloworld(@RequestParam String name) {
-        log.info("hello "+name+"，this is first messge");
-    	return "hello "+name+"，this is first messge";
+        log.info("helloworld "+name+"，this is helloworld");
+    	return "helloworld "+name+"，this is helloworld";
     }
     
     @RequestMapping("/hello/{name}")
